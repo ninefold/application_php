@@ -57,6 +57,7 @@ def create_configuration_files
       mode "644"
       variables(
         :path => "#{new_resource.path}/current",
+	:host => host,
         :database => new_resource.database
       )
     end
